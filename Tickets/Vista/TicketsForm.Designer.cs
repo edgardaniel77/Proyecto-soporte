@@ -49,6 +49,8 @@
             this.DescuentpotextBox = new System.Windows.Forms.TextBox();
             this.TotaltextBox = new System.Windows.Forms.TextBox();
             this.GenerarTicketbtn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -217,7 +219,7 @@
             // 
             // GenerarTicketbtn
             // 
-            this.GenerarTicketbtn.Location = new System.Drawing.Point(579, 348);
+            this.GenerarTicketbtn.Location = new System.Drawing.Point(547, 274);
             this.GenerarTicketbtn.Name = "GenerarTicketbtn";
             this.GenerarTicketbtn.Size = new System.Drawing.Size(115, 34);
             this.GenerarTicketbtn.TabIndex = 21;
@@ -225,11 +227,20 @@
             this.GenerarTicketbtn.UseVisualStyleBackColor = true;
             this.GenerarTicketbtn.Click += new System.EventHandler(this.GenerarTicketbtn_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(30, 342);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(742, 150);
+            this.dataGridView1.TabIndex = 22;
+            // 
             // TicketsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.GenerarTicketbtn);
             this.Controls.Add(this.TotaltextBox);
             this.Controls.Add(this.DescuentpotextBox);
@@ -253,6 +264,7 @@
             this.Controls.Add(this.label1);
             this.Name = "TicketsForm";
             this.Text = "TicketsForm";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,5 +293,6 @@
         private System.Windows.Forms.TextBox DescuentpotextBox;
         private System.Windows.Forms.TextBox TotaltextBox;
         private System.Windows.Forms.Button GenerarTicketbtn;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
